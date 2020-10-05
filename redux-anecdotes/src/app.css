@@ -1,0 +1,15 @@
+body{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+.anecdote{
+  padding: 0.5em;
+  border-radius: 8px;
+  background:#f2f2f2;
+  margin:0.5em;
+}
+
+.anecdote button{
+  margin:12px;
+}
