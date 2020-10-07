@@ -6,14 +6,13 @@ import AnecdotesForm from './components/AnecdotesForm'
 import AnecdotesList from './components/AnecdotesList'
 import Filter from './components/Filter'
 import Notification from './components/Notification'
-import anecdotesService from './services/anecdotes'
 import { initializeAnecdotes } from '../src/reducers/anecdoteReducer'
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    anecdotesService.getAll().then(anecdotes => dispatch(initializeAnecdotes(anecdotes)))
+    dispatch(initializeAnecdotes())
   }, [])// eslint-disable-line react-hooks/exhaustive-deps 
 
   return (

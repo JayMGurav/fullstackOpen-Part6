@@ -7,3 +7,4 @@ The exercises will be the respective commits
 + **Exercises 6.3.-6.8.** are in single commit with same message
 + **Exercises 6.9.-6.12.** are in single commit with same message
 + **Exercises 6.13.-6.14.** are in single commit with same message
++ **Exercises 6.15.-6.18.** are in single commit with same message
