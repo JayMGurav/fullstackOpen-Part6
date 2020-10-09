@@ -19,4 +19,8 @@ const createNew = async (anecdote) => {
   return response.data
 }
 
+const update = async (id) => {
+
+}
+
 export default { getAll, createNew }

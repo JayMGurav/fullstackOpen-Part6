@@ -1,12 +1,14 @@
 export const createNotification = (notification, timeToLive) => {
   return async dispatch => {
-    setTimeout(() => {
+    var timeoutId;
+    timeoutId = setTimeout(() => {
       dispatch({
         type: 'RESET_NOTIFICATION',
         notification
       })
     }, timeToLive * 1000);
 
+    clearTimeout(timeoutId)
     dispatch({
       type: 'SET_NOTIFICATION',
       notification
