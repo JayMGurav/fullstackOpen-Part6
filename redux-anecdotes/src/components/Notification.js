@@ -19,7 +19,7 @@ const Notification = (props) => {
 }
 
 const mapStateToprops = ({ notification }) => {
-  return { notification };
+  return { notification }
 }
 const connectedNotification = connect(mapStateToprops, null)(Notification)
 export default connectedNotification

@@ -2,7 +2,7 @@ import React from 'react'
 // import { useDispatch, useSelector } from 'react-redux'
 import { connect } from 'react-redux'
 import { upvoteAnecdote } from '../reducers/anecdoteReducer'
-import { createNotification } from "../reducers/notificationReducer";
+import { createNotification } from '../reducers/notificationReducer'
 
 const AnecdotesList = (props) => {
   // const dispatch = useDispatch()
@@ -22,8 +22,8 @@ const AnecdotesList = (props) => {
   const vote = (id, content) => {
     // dispatch(upvoteAnecdote(id));
     // dispatch(createNotification(`you up-voted '${content}'`, 5))
-    props.upvoteAnecdote(id);
-    props.createNotification(`you up-voted '${content}'`, 5);
+    props.upvoteAnecdote(id)
+    props.createNotification(`you up-voted '${content}'`, 5)
   }
 
   return (

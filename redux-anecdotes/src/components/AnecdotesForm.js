@@ -2,7 +2,7 @@ import React from 'react'
 // import { useDispatch } from 'react-redux'
 import { connect } from 'react-redux'
 import { createAnecdote } from '../reducers/anecdoteReducer'
-import { createNotification } from "../reducers/notificationReducer";
+import { createNotification } from '../reducers/notificationReducer'
 
 
 
@@ -13,8 +13,8 @@ const AnecdotesForm = (props) => {
     event.preventDefault()
     const anecdote = event.target.anecdote.value
     event.target.anecdote.value = ''
-    props.createAnecdote(anecdote);
-    props.createNotification(`you added '${anecdote}' to the list`, 5);
+    props.createAnecdote(anecdote)
+    props.createNotification(`you added '${anecdote}' to the list`, 5)
   }
 
   return (
@@ -32,4 +32,4 @@ const mapDispatchToProps = {
 }
 
 const connectedAnecdotesForm = connect(null, mapDispatchToProps)(AnecdotesForm)
-export default connectedAnecdotesForm;
+export default connectedAnecdotesForm

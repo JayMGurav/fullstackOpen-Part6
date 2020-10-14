@@ -9,11 +9,11 @@ import Notification from './components/Notification'
 import { initializeAnecdotes } from '../src/reducers/anecdoteReducer'
 
 const App = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(initializeAnecdotes())
-  }, [])// eslint-disable-line react-hooks/exhaustive-deps 
+  }, [])// eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div style={{ padding: '1em' }}>
